@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/f9e7a8f8d3.js" crossorigin="anonymous"></script>
     <title>New project</title>
 
 </head>
-    <body>
-        <div class="wrapper">
+    <body >
+        <div class="wrapper" id="#home">
+            <div class="social">
+                <a href="https://www.facebook.com/profile.php?id=100047320765246"><i class="fab fa-facebook-square"></i></a> 
+                <a href=""><i class="fab fa-twitter"></i></a>  
+                <a href=""><i class="fab fa-snapchat-square"></i></a>
+            </div>
             <div class="container sticky-top">
                 <div class="row">
                     <div class="col-lg-4 brand text-center">
@@ -19,19 +24,19 @@
                     </div>
                     
                     <div class="col-lg-8">
-                        <nav class="navbar navbar-expand-lg navbar-light ">                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <nav class="navbar navbar-expand-lg navbar-light bg ">                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>
                             </button>
                                 <div class="collapse navbar-collapse " id="navbarNav">
-                                    <ul class="navbar-nav ml-auto pt-4 ">
+                                    <ul class="navbar-nav ml-auto pt-lg-1 " style="z-index: 3;">
                                         <li class="nav-item active">
-                                        <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                                        <a class="nav-link active" href="#home">Home <span class="sr-only">(current)</span></a>
                                         </li>
                                         <li class="nav-item">
-                                        <a class="nav-link" href="#">About Me</a>
+                                        <a class="nav-link" href="#about">About Me</a>
                                         </li>
                                         <li class="nav-item">
-                                        <a class="nav-link" href="#">Experience</a>
+                                        <a class="nav-link" href="#projects">Projects</a>
                                         </li>
                                         <li class="nav-item">
                                         <a class="nav-link" href="#">Contact</a>
@@ -42,51 +47,95 @@
                     </div>
                 </div>
             </div>
-            <div class="container mt-4 d-lg-none">
-                <div class="row profile-row">
-                    <div class="col-lg-6 profile-box order-xs-2">
-                        <div class="box">
-                            <img src="/images/me.jpg" alt="">
+            <main class="container">
+                <section class="welcome-page " id="home">
+                        <h1  data-aos="fade-left">Welcome To My<br> PORTFOLIO</h1>
+                        <p class="lead" data-aos="fade-right">Ready to Begin Your Journey !</p>
+                        <button ><a href="#about">LET'S GO</a></button>
+                </section>
+                <div class="container" id="about" >
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h3 class="text-center">About me</h3>
+                        </div>
+                        <div class="col-lg-4 profile-pic" >
+                            <img  src="./images/me1.jpeg" alt="Owner Picture">
+                        </div>    
+                        <div class="col-lg-8">
+                                <p class="">
+                                    hello, my name is muhammed omar iam a web developer and UI designer 
+                                    who loves to design beautiful websites, <br>
+                                    i lives in Egypt where the Pyramids is,<br>
+                                    this is my first portfolio, after alot of exercieses,<br>
+                                    one of my hobbies is technology ,
+                                    i hope someday to achieve something great . 
+                                </p>
+                        </div>   
+                    </div>    
+                </div>
+                <div class="container" id="projects">
+                    <div class="row ">
+                        <div class="col-lg-12">
+                            <h2 class="text-center">Experience</h2>
+                        </div>
+                        <div class="col-lg-12">
+                            <li>
+                                <h3>HTML5</h3><span class="bar"><span class="html"></span></span>
+                            </li>
+                        </div>
+                        <div class="col-lg-12">
+                            <li>
+                                <h3>CSS3</h3><span class="bar"><span class="css"></span></span>
+                            </li>
+                        </div>
+                        <div class="col-lg-12">
+                            <li>
+                                <h3>JavaScript</h3><span class="bar"><span class="java"></span></span>
+                            </li>
+                        </div>
+                        <div class="col-lg-12">
+                            <li>
+                                <h3>BootStrap</h3><span class="bar"><span class="bootstrap"></span></span>
+                            </li>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="container" id="cards">
+                    <h3 class="text-center">Projects</h3>
+                    <div class="row card-img">
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <img src="./images/creation-responsive-internet-website-multiple-600w-1199480788.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <img src="./images/stock-photo-website-wireframe-sketch-on-digital-tablet-screen-164413979.jpg" alt="">
+                            </div>
+
                         </div>
                         
-                    </div>
-                    <div class="col-lg-6 welcome-box d-flex flex-column text-center" >
-                        <h3 class="pt-3">Welcome To My <span>PORTFOLIO</span></h3>
-                        <p class="pt-5 lead">hello, my name is muhammed omar, iam a web designer who loves to make beautiful 
-                            designs, iam from egypt where the pyramids is. 
-                        </p>
-                        <div class="  btns row w-100">
-                            <div class="col-xs-6">
-                                 <a href="/">Tour</a>
-                                </div>
-                               
-                            <div class="col-xs-6">
-                                <a href="/"> Rate Me</a>
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <img src="./images/stock-vector-vector-header-design-with-diagonal-black-and-yellow-lines-and-a-place-for-photos-universal-landing-795455281.jpg" alt="">
                             </div>
-                               
-                            
-                            
+
                         </div>
                     </div>
                 </div>
-            </div>
+                
+               
+            </main>
 
         
-        <div class="container" style="height: 3000px ; ">
-
-        </div>
-        <div class="container-fluid fixed-bottom footer">
-            <div class="row">
-                <div class="col-lg-6 col-xs-6 left-footer">
-                    <h4>&#169; MuhammedOmar Designs 2020	</h4>
-                </div>
-                <div class="col-lg-6 col-xs-6 right-footer">
-                    <a href=""><i class="fab fa-facebook-square"></i></a> 
-                    <a href=""><i class="fab fa-twitter"></i></a>  
-                    <a href=""><i class="fab fa-snapchat-square"></i></a>
-                </div>
-            </div>
-        </div>
+       
+            
+                
+               
+                    
+                
+            
         </div>
 
 
@@ -105,10 +154,23 @@
 
 
 
-        <!-- <script src="/js/main.js"></script> -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+      $(window).scroll(function(){
+        
+       $('nav').toggleClass('scrolled',$(this).scrollTop() > 50 );        
+
+      });
+  </script>
+  <script>
+    AOS.init({
+        duration:2500,
+        
+    });
+  </script>
         <script src="/js/main.js"></script>  
     </body>
 </html>
